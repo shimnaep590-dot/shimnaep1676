@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Jane Doe</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Jane Doe</span></h1>
+      <h2>Full-Stack Software Engineer</h2>
+      <p>I build elegant, scalable, and high-performance web applications.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I’m a software engineer with 3+ years of experience building modern web applications. 
+        I specialize in JavaScript, React, Node.js, and cloud platforms. Passionate about UI/UX design, clean architecture, and open-source software.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack online store with real-time inventory, Stripe payments, and admin analytics.</p>
+            <div class="tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Task Management App</h3>
+            <p>A drag-and-drop productivity board with team collaboration features and push notifications.</p>
+            <div class="tags">
+              <span>TypeScript</span><span>Next.js</span><span>Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>AI Content Generator</h3>
+            <p>A SaaS app leveraging OpenAI API to streamline social media content creation.</p>
+            <div class="tags">
+              <span>Python</span><span>FastAPI</span><span>Vue.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-wrapper">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+), React, TypeScript, Tailwind CSS</p>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <p>Node.js, Express, Python, FastAPI, PostgreSQL, MongoDB</p>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & DevOps</h3>
+          <p>Git, GitHub, Docker, AWS, Vercel, Jest</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Jane Doe. Built with modern web standards.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
