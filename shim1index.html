@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shimna EP | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#0f172a);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#00e5ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+section{
+min-height:100vh;
+padding:110px 8%;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:60px;
+margin:15px 0;
+}
+
+.hero-text span{
+color:#00e5ff;
+}
+
+.hero-text p{
+line-height:1.8;
+margin:20px 0;
+max-width:650px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#00e5ff;
+color:#111;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00e5ff;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:300px;
+height:300px;
+border-radius:50%;
+border:6px solid #00e5ff;
+box-shadow:0 0 30px #00e5ff;
+object-fit:cover;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+color:#00e5ff;
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:15px;
+}
+
+.about p{
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.skill{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:15px;
+}
+
+.bar{
+height:10px;
+background:#444;
+border-radius:20px;
+margin-top:10px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+background:#00e5ff;
+width:0%;
+transition:2s;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(255,255,255,.08);
+}
+
+.fade{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-image img{
+width:230px;
+height:230px;
+margin-bottom:30px;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Shimna EP</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section id="home">
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Shimna <span>EP</span></h1>
+
+<h2 id="typing"></h2>
+
+<p>
+
+I am a passionate <b>Web Designer</b>, <b>Programmer</b>, and <b>Researcher</b> currently pursuing a <b>Bachelor of Computer Applications (BCA)</b> at <b>GEMS Arts and Science College, Ramapuram</b>. I enjoy building attractive websites and learning modern technologies.
+
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://i.imgur.com/QCNbOAo.png" alt="Profile">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="fade">
+
+<h2 class="title">About Me</h2>
+
+<div class="glass about">
+
+<p>
+
+Hi! I'm <b>Shimna EP</b>, a passionate Web Designer, Programmer, and Researcher from Kerala. I am pursuing my <b>Bachelor of Computer Applications (BCA)</b> at <b>GEMS Arts and Science College, Ramapuram</b>. I love creating responsive websites, solving programming problems, and exploring new technologies. My dream is to become a successful Full Stack Developer and build innovative digital solutions.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="fade">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>HTML</h3>
+<div class="bar"><div class="progress" data-width="95%"></div></div>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+<div class="bar"><div class="progress" data-width="90%"></div></div>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<div class="bar"><div class="progress" data-width="85%"></div></div>
+</div>
+
+<div class="skill">
+<h3>Programming</h3>
+<div class="bar"><div class="progress" data-width="88%"></div></div>
+</div>
+
+<div class="skill">
+<h3>Research</h3>
+<div class="bar"><div class="progress" data-width="92%"></div></div>
+</div>
+
+<div class="skill">
+<h3>Web Design</h3>
+<div class="bar"><div class="progress" data-width="94%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="fade">
+
+<h2 class="title">Contact</h2>
+
+<div class="glass contact">
+
+<p><strong>Name:</strong> Shimna EP</p>
+
+<p><strong>Education:</strong> Bachelor of Computer Applications (BCA)</p>
+
+<p><strong>College:</strong> GEMS Arts and Science College, Ramapuram</p>
+
+<p><strong>Profession:</strong> Web Designer | Programmer | Researcher</p>
+
+<p><strong>Mobile:</strong> <a href="tel:7306300384" style="color:#00e5ff;">7306300384</a></p>
+
+<p><strong>Email:</strong> your-email@example.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Shimna EP | Designed with ❤️
+
+</footer>
+
+<script>
+
+const words=[
+"Web Designer",
+"Programmer",
+"Researcher",
+"BCA Student",
+"GEMS Arts & Science College"
+];
+
+let i=0,j=0,current="",deleting=false;
+
+function type(){
+
+current=words[i];
+
+if(!deleting){
+document.getElementById("typing").textContent=current.substring(0,j++);
+if(j>current.length){
+deleting=true;
+setTimeout(type,1000);
+return;
+}
+}else{
+document.getElementById("typing").textContent=current.substring(0,j--);
+if(j==0){
+deleting=false;
+i=(i+1)%words.length;
+}
+}
+
+setTimeout(type,deleting?60:120);
+
+}
+
+type();
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+
+window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".progress").forEach(bar=>{
+bar.style.width=bar.dataset.width;
+});
+
+});
+
+</script>
+
+</body>
+</html>
