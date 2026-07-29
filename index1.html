@@ -499,7 +499,8 @@
         <div class="hero-container">
             <!-- Profile Photo Container -->
             <div class="profile-wrapper">
-                <img src="FATHIMSHIMNA.jpg (1)_2.jpeg" alt="Fathimath Shimna EP" class="profile-img" id="userPhoto">
+                <!-- Cleaned up image file name to prevent broken images -->
+                <img src="profile.jpg.jpeg" alt="Fathimath Shimna EP" class="profile-img" id="userPhoto">
             </div>
 
             <div class="hero-content">
@@ -664,20 +665,21 @@
             if (nameIdx < nameText.length) {
                 typedNameElem.textContent += nameText.charAt(nameIdx);
                 nameIdx++;
-                setTimeout(typeName, 90); // Typing speed for name
+                setTimeout(typeName, 90);
             } else {
-                setTimeout(typeRole, 400); // Start role typing when name finishes
+                // Safely trigger role animation after name finishes
+                setTimeout(typeRole, 500);
             }
         }
 
         // 2. Dynamic Rotating Roles Typing Animation
         const roles = [
-            "BCA Student",
-            "Software Developer",
-            "AI Engineer",
-            "Data Analyst",
-            "Teacher"
-        ];
+    "BCA Student",
+    "Software Developer",
+    "AI Engineer",
+    "Data Analyst",
+    "Teacher"
+];
 
         let roleIdx = 0;
         let charIdx = 0;
@@ -685,6 +687,7 @@
         const typedRoleElem = document.getElementById("typed-role");
 
         function typeRole() {
+            if (!typedRoleElem) return;
             const currentRole = roles[roleIdx];
 
             if (isDeleting) {
@@ -709,16 +712,18 @@
             setTimeout(typeRole, speed);
         }
 
-        // Start sequence on page load
+        // Start sequence safely once DOM is fully loaded
         window.addEventListener('DOMContentLoaded', () => {
             typeName();
         });
 
         // Photo Error Handling (Fallback Image)
         const photo = document.getElementById('userPhoto');
-        photo.onerror = function() {
-            this.src = 'https://ui-avatars.com/api/?name=Fathimath+Shimna&background=0D8ABC&color=fff&size=300';
-        };
+        if (photo) {
+            photo.onerror = function() {
+                this.src = 'https://ui-avatars.com/api/?name=Fathimath+Shimna&background=0D8ABC&color=fff&size=300';
+            };
+        }
     </script>
 </body>
 </html>
