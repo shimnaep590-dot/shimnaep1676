@@ -1,426 +1,4389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FathimathShimna EP | Portfolio</title>
-  <!-- Google Fonts & Font Awesome Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <style>
-    /* Global Styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
+<meta charset="UTF-8">
 
-    body {
-      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
-      color: #f3f4f6;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* Main Container with Glassmorphism Effect */
-    .portfolio-container {
-      background: rgba(255, 255, 255, 0.07);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      width: 100%;
-      max-width: 750px;
-      border-radius: 20px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-      overflow: hidden;
-    }
+<title>Fathimath Shimna E P | Software Engineer</title>
 
-    /* Header Profile Banner */
-    .header {
-      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-      padding: 40px 20px;
-      text-align: center;
-      position: relative;
-    }
+<meta name="description" content="Portfolio of Fathimath Shimna E P - Software Engineer, BCA Artificial Intelligence and Data Science student, Data Science professional and programmer.">
 
-    /* Profile Photo Styling */
-    .avatar-wrapper {
-      position: relative;
-      width: 110px;
-      height: 110px;
-      margin: 0 auto 15px auto;
-    }
+<meta name="keywords" content="Fathimath Shimna, Software Engineer, BCA, Artificial Intelligence, Data Science, Python, Java, Web Developer">
 
-    .profile-photo {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3.5px solid #ffffff;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-      background-color: #1e1b4b;
-    }
+<meta name="author" content="Fathimath Shimna E P">
 
-    /* Camera Upload Button Overlay */
-    .upload-btn {
-      position: absolute;
-      bottom: 2px;
-      right: 2px;
-      background: #38bdf8;
-      color: #0f172a;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      border: 2px solid #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease, background 0.2s ease;
-    }
 
-    .upload-btn:hover {
-      transform: scale(1.1);
-      background: #ffffff;
-    }
+<!-- Open Graph SEO -->
 
-    .header h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: 0.5px;
-    }
+<meta property="og:title" content="Fathimath Shimna E P | Software Engineer">
 
-    .header p {
-      font-size: 1rem;
-      color: #f3e8ff;
-      margin-top: 6px;
-      font-weight: 400;
-    }
+<meta property="og:description" content="BCA Artificial Intelligence and Data Science student passionate about programming, data science and software development.">
 
-    /* Navigation Bar */
-    .tab-nav {
-      display: flex;
-      background: rgba(15, 23, 42, 0.6);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      overflow-x: auto;
-    }
+<meta property="og:type" content="website">
 
-    .tab-btn {
-      flex: 1;
-      padding: 16px 12px;
-      border: none;
-      background: transparent;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #9ca3af;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      white-space: nowrap;
-    }
 
-    .tab-btn:hover {
-      color: #f3f4f6;
-      background: rgba(255, 255, 255, 0.05);
-    }
+<!-- Theme -->
 
-    .tab-btn.active {
-      color: #38bdf8;
-      border-bottom: 3px solid #38bdf8;
-      background: rgba(56, 189, 248, 0.1);
-      font-weight: 600;
-    }
+<meta name="theme-color" content="#050505">
 
-    /* Tab Content Area */
-    .tab-content {
-      display: none;
-      padding: 32px 28px;
-      animation: fadeInUp 0.4s ease-in-out;
-    }
 
-    .tab-content.active {
-      display: block;
-    }
+<!-- Google Fonts -->
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    /* Headings & Text Styling */
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 18px;
-      color: #38bdf8;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    p {
-      line-height: 1.7;
-      color: #d1d5db;
-      margin-bottom: 16px;
-      font-size: 0.98rem;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    /* Highlight Cards */
-    .highlight-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 18px;
-      margin-bottom: 16px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
 
-    .highlight-card:hover {
-      transform: translateY(-3px);
-      border-color: rgba(56, 189, 248, 0.4);
-    }
+<!-- Icons -->
 
-    .highlight-card h3 {
-      font-size: 1.1rem;
-      color: #f43f5e;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    /* Badges & Tags */
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
 
-    .skill-tag {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
-      border: 1px solid rgba(168, 85, 247, 0.4);
-      color: #e0e7ff;
-      padding: 10px 16px;
-      border-radius: 30px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+<!-- Animation Libraries -->
 
-    /* Contact Links */
-    .contact-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 10px;
-    }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 16px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #f3f4f6;
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 
-    .contact-item:hover {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: #38bdf8;
-    }
 
-    .contact-icon {
-      width: 45px;
-      height: 45px;
-      background: linear-gradient(135deg, #38bdf8, #818cf8);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: #ffffff;
-    }
+<style>
 
-    .contact-details h4 {
-      font-size: 0.85rem;
-      color: #9ca3af;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-    }
+/* =========================
+GLOBAL VARIABLES
+========================= */
 
-    .contact-details p {
-      margin: 0;
-      font-weight: 600;
-      color: #ffffff;
-      font-size: 1.05rem;
-    }
-  </style>
+:root{
+
+--bg:#050505;
+
+--card:rgba(255,255,255,0.08);
+
+--primary:#00E5FF;
+
+--secondary:#7B61FF;
+
+--accent:#00FF99;
+
+--white:#ffffff;
+
+--text:#cccccc;
+
+--blur:blur(20px);
+
+--transition:0.4s ease;
+
+}
+
+
+/* =========================
+RESET
+========================= */
+
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+scroll-behavior:smooth;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+
+html{
+
+overflow-x:hidden;
+
+}
+
+
+body{
+
+background:var(--bg);
+
+color:var(--white);
+
+overflow-x:hidden;
+
+}
+
+
+
+/* =========================
+BACKGROUND EFFECTS
+========================= */
+
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:600px;
+
+height:600px;
+
+background:radial-gradient(circle,var(--primary),transparent 70%);
+
+top:-250px;
+
+left:-250px;
+
+opacity:.15;
+
+filter:blur(80px);
+
+z-index:-1;
+
+}
+
+
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:600px;
+
+height:600px;
+
+background:radial-gradient(circle,var(--secondary),transparent 70%);
+
+bottom:-250px;
+
+right:-250px;
+
+opacity:.15;
+
+filter:blur(100px);
+
+z-index:-1;
+
+}
+
+
+
+/* =========================
+GLOBAL ELEMENTS
+========================= */
+
+
+section{
+
+padding:100px 8%;
+
+position:relative;
+
+}
+
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+h1,h2,h3{
+
+font-weight:700;
+
+}
+
+
+h2{
+
+font-size:42px;
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+
+p{
+
+color:var(--text);
+
+line-height:1.8;
+
+}
+
+
+
+a{
+
+text-decoration:none;
+
+color:white;
+
+}
+
+
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+
+
+/* =========================
+GLASS DESIGN
+========================= */
+
+
+.glass{
+
+background:var(--card);
+
+backdrop-filter:var(--blur);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:var(--transition);
+
+}
+
+
+
+.primary{
+
+background:var(--primary);
+
+color:#000;
+
+}
+
+
+
+.secondary{
+
+border:2px solid var(--primary);
+
+}
+
+
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 30px var(--primary);
+
+}
+
+
+
+/* =========================
+SCROLL BAR
+========================= */
+
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+background:var(--primary);
+
+border-radius:20px;
+
+}
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 20px;
+
+}
+
+
+h2{
+
+font-size:32px;
+
+}
+
+}
+
+
+</style>
+
 </head>
+
 <body>
+  <!-- =========================
+PART 2 : LOADING SCREEN + NAVBAR + HERO
+========================= -->
 
-  <div class="portfolio-container">
-    <!-- Header -->
-    <header class="header">
-      <!-- Profile Photo with Dynamic Upload -->
-      <div class="avatar-wrapper">
-        <img 
-          id="profile-img" 
-          src="profile.jpg" 
-          alt="Fathimath Shimna EP" 
-          class="profile-photo"
-          onerror="this.src='profile.jpg.jpeg'" 
-        />
-        <!-- Camera Icon Button -->
-        <label for="photo-upload" class="upload-btn" title="Upload Photo">
-          <i class="fa-solid fa-camera"></i>
-        </label>
-        <input 
-          type="file" 
-          id="photo-upload" 
-          accept="image/*" 
-          onchange="previewPhoto(event)" 
-          style="display: none;" 
-        />
-      </div>
 
-      <h1>FathimathShimna EP</h1>
-      <p>BCA Student | Aspiring Software Developer | Educator</p>
-    </header>
+<!-- Loading Screen -->
 
-    <!-- Navigation Tabs -->
-    <nav class="tab-nav">
-      <button class="tab-btn active" onclick="openTab(event, 'about')">
-        <i class="fa-solid fa-user"></i> About Me
-      </button>
-      <button class="tab-btn" onclick="openTab(event, 'education')">
-        <i class="fa-solid fa-graduation-cap"></i> Education
-      </button>
-      <button class="tab-btn" onclick="openTab(event, 'skills')">
-        <i class="fa-solid fa-code"></i> Skills
-      </button>
-      <button class="tab-btn" onclick="openTab(event, 'contact')">
-        <i class="fa-solid fa-envelope"></i> Contact
-      </button>
-    </nav>
+<div id="loader">
 
-    <!-- Tab 1: About Me -->
-    <section id="about" class="tab-content active">
-      <h2><i class="fa-solid fa-hand-wave"></i> Welcome!</h2>
-      <p>
-        Hi, I am <strong>FathimathShimna EP</strong>. I am currently pursuing my <strong>BCA</strong> with a deep focus on <strong>Artificial Intelligence, Data Science, and Full Stack Development</strong>.
-      </p>
-      
-      <div class="highlight-card">
-        <h3><i class="fa-solid fa-lightbulb"></i> Entrepreneurial & Business Mindset</h3>
-        <p style="margin: 0;">
-          Beyond technology, I possess a strategic <strong>business mind</strong>. I enjoy looking at software solutions from a business perspective, identifying practical problems, and creating efficient, real-world digital products.
-        </p>
-      </div>
+<div class="loader-box">
 
-      <div class="highlight-card">
-        <h3><i class="fa-solid fa-chalkboard-user"></i> Teaching & Mentoring</h3>
-        <p style="margin: 0;">
-          I have strong communication skills and high confidence in teaching students. I thrive when explaining complex concepts, breaking them down into digestible lessons, and empowering learners.
-        </p>
-      </div>
-    </section>
+<h1>SE</h1>
 
-    <!-- Tab 2: Education -->
-    <section id="education" class="tab-content">
-      <h2><i class="fa-solid fa-book-open"></i> Education Details</h2>
-      <div class="highlight-card">
-        <h3><i class="fa-solid fa-university"></i> Bachelor of Computer Applications (BCA)</h3>
-        <p><strong>Specializations:</strong> Artificial Intelligence, Data Science & Full Stack Development</p>
-        <p style="margin: 0; font-size: 0.9rem; color: #9ca3af;">
-          Focusing on software engineering principles, algorithm design, machine learning foundational concepts, and full-stack web applications.
-        </p>
-      </div>
-    </section>
+<div class="loader-line">
+<span></span>
+</div>
 
-    <!-- Tab 3: Skills -->
-    <section id="skills" class="tab-content">
-      <h2><i class="fa-solid fa-laptop-code"></i> Skills & Expertise</h2>
-      <p>A combination of technical expertise, analytical thinking, and teaching talents:</p>
-      
-      <div class="skills-grid">
-        <div class="skill-tag"><i class="fa-solid fa-terminal"></i> Programming</div>
-        <div class="skill-tag"><i class="fa-solid fa-layer-group"></i> Full Stack Development</div>
-        <div class="skill-tag"><i class="fa-solid fa-brain"></i> Artificial Intelligence</div>
-        <div class="skill-tag"><i class="fa-solid fa-chart-pie"></i> Data Science</div>
-        <div class="skill-tag"><i class="fa-solid fa-chalkboard-teacher"></i> Teaching Skills</div>
-        <div class="skill-tag"><i class="fa-solid fa-briefcase"></i> Business Mindset</div>
-        <div class="skill-tag"><i class="fa-solid fa-bullhorn"></i> Student Mentoring</div>
-        <div class="skill-tag"><i class="fa-solid fa-gears"></i> Software Engineering</div>
-      </div>
-    </section>
+<p>Loading Portfolio...</p>
 
-    <!-- Tab 4: Contact -->
-    <section id="contact" class="tab-content">
-      <h2><i class="fa-solid fa-address-book"></i> Get In Touch</h2>
-      <p>Feel free to reach out for software projects, teaching requests, or technical collaborations:</p>
+</div>
 
-      <div class="contact-list">
-        <a href="tel:7306300384" class="contact-item">
-          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-          <div class="contact-details">
-            #### Mobile Number
-            <p>+91 7306300384</p>
-          </div>
-        </a>
+</div>
 
-        <a href="mailto:shimnaep590@gmail.com" class="contact-item">
-          <div class="contact-icon"><i class="fa-solid fa-paper-plane"></i></div>
-          <div class="contact-details">
-            #### Email Address
-            <p>shimnaep590@gmail.com</p>
-          </div>
-        </a>
-      </div>
-    </section>
-  </div>
 
-  <!-- JavaScript for Tabs & Photo Upload -->
-  <script>
-    // Tab Navigation Logic
-    function openTab(event, tabId) {
-      const contents = document.querySelectorAll('.tab-content');
-      contents.forEach(content => content.classList.remove('active'));
 
-      const buttons = document.querySelectorAll('.tab-btn');
-      buttons.forEach(button => button.classList.remove('active'));
+<!-- Scroll Progress -->
 
-      document.getElementById(tabId).classList.add('active');
-      event.currentTarget.classList.add('active');
-    }
+<div id="scroll-progress"></div>
 
-    // Photo Preview Logic
-    function previewPhoto(event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          document.getElementById('profile-img').src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    }
-  </script>
+
+
+<!-- Navbar -->
+
+<header>
+
+<nav class="navbar glass">
+
+
+<a href="#" class="logo">
+
+Shimna<span>.</span>
+
+</a>
+
+
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#github">GitHub</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+
+<button class="menu-btn" aria-label="Open Menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+<!-- Hero Section -->
+
+<section id="home">
+
+
+<div class="hero container">
+
+
+
+<div class="hero-image">
+
+
+<div class="profile-glow">
+
+<img src="profile.jpeg"
+alt="Fathimath Shimna E P profile image">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="hero-content">
+
+
+<h3>Hello, I'm</h3>
+
+
+<h1>
+
+Fathimath Shimna E P
+
+</h1>
+
+
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+
+
+
+<p>
+
+I am a BCA Artificial Intelligence and Data Science student,
+passionate about Software Engineering, Data Science,
+Full Stack Development, programming, research and problem solving.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<a href="#contact"
+class="btn primary">
+
+Hire Me
+
+</a>
+
+
+<a href="resume.pdf"
+class="btn secondary">
+
+Resume
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="social-icons">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank"
+aria-label="GitHub">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+
+
+<a href="https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6/"
+target="_blank"
+aria-label="LinkedIn">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+
+
+<a href="https://www.instagram.com/_fathmth.shimna_"
+target="_blank"
+aria-label="Instagram">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+<a href="mailto:shimnaep590@gmail.com"
+aria-label="Email">
+
+<i class="fa-solid fa-envelope"></i>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Floating Technology Icons -->
+
+
+<div class="floating tech1">
+
+<i class="fab fa-python"></i>
+
+</div>
+
+
+<div class="floating tech2">
+
+<i class="fa-solid fa-brain"></i>
+
+</div>
+
+
+<div class="floating tech3">
+
+<i class="fa-solid fa-chart-line"></i>
+
+</div>
+
+
+<div class="floating tech4">
+
+<i class="fab fa-java"></i>
+
+</div>
+
+
+
+</section>
+<!-- =========================
+PART 3 : ABOUT + SKILLS + EXPERIENCE
+========================= -->
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<div class="container">
+
+
+<h2>About Me</h2>
+
+
+<div class="glass about-card">
+
+
+<h3>Fathimath Shimna E P</h3>
+
+
+<p>
+
+I am a BCA student specializing in Artificial Intelligence
+and Data Science. I am passionate about Software Engineering,
+Full Stack Development, Data Analytics, programming and research.
+
+</p>
+
+
+<p>
+
+My goal is to become a skilled Software Engineer and Data Analyst
+by continuously learning modern technologies and creating
+innovative solutions.
+
+</p>
+
+
+
+<div class="about-grid">
+
+
+<div class="glass info-card">
+
+<i class="fa-solid fa-bullseye"></i>
+
+<h3>Mission</h3>
+
+<p>
+
+To develop useful software solutions and improve my technical
+skills through continuous learning.
+
+</p>
+
+</div>
+
+
+
+<div class="glass info-card">
+
+<i class="fa-solid fa-eye"></i>
+
+<h3>Vision</h3>
+
+<p>
+
+To become a successful software engineer, researcher and
+technology professional.
+
+</p>
+
+</div>
+
+
+
+<div class="glass info-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Philosophy</h3>
+
+<p>
+
+Learning, creating and solving problems through technology.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="stats">
+
+
+<div class="glass stat-box">
+
+<h3>9.85</h3>
+
+<p>CGPA</p>
+
+</div>
+
+
+
+<div class="glass stat-box">
+
+<h3>1.2+</h3>
+
+<p>Years Freelance</p>
+
+</div>
+
+
+
+<div class="glass stat-box">
+
+<h3>10+</h3>
+
+<p>Skills</p>
+
+</div>
+
+
+
+<div class="glass stat-box">
+
+<h3>5+</h3>
+
+<p>Projects</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- SKILLS SECTION -->
+
+
+<section id="skills">
+
+
+<div class="container">
+
+
+<h2>Skills</h2>
+
+
+
+<div class="skills-grid">
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-python"></i>
+
+<h3>Python</h3>
+
+</div>
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-java"></i>
+
+<h3>Java</h3>
+
+</div>
+
+
+
+<div class="glass skill-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>C Programming</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-html5"></i>
+
+<h3>HTML</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-css3-alt"></i>
+
+<h3>CSS</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-js"></i>
+
+<h3>JavaScript</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>Artificial Intelligence</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h3>Data Science</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h3>Data Structures</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Data Analytics</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-git-alt"></i>
+
+<h3>Git</h3>
+
+</div>
+
+
+
+
+<div class="glass skill-card">
+
+<i class="fab fa-github"></i>
+
+<h3>GitHub</h3>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- EXPERIENCE TIMELINE -->
+
+
+<section id="experience">
+
+
+<div class="container">
+
+
+<h2>Experience</h2>
+
+
+
+<div class="timeline">
+
+
+
+<div class="glass timeline-card">
+
+
+<i class="fa-solid fa-briefcase"></i>
+
+
+<h3>
+
+Freelance Data Science Professional
+
+</h3>
+
+
+<span>
+
+1.2 Years
+
+</span>
+
+
+<p>
+
+Worked on freelance data science projects,
+using Python for data analysis and related tasks.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="glass timeline-card">
+
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+
+<h3>
+
+BCA Artificial Intelligence & Data Science Student
+
+</h3>
+
+
+<span>
+
+Present
+
+</span>
+
+
+<p>
+
+Currently learning programming, AI,
+machine learning, data science and software development.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =========================
+PART 4 : EDUCATION + ACHIEVEMENTS + SERVICES
+========================= -->
+
+
+<!-- EDUCATION SECTION -->
+
+<section id="education">
+
+<div class="container">
+
+<h2>Education</h2>
+
+
+<div class="timeline">
+
+
+<div class="glass timeline-card">
+
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+
+<h3>
+Bachelor of Computer Applications (BCA)
+</h3>
+
+
+<h4>
+University of Calicut
+</h4>
+
+
+<span>
+Expected Graduation: 2029
+</span>
+
+
+<p>
+
+Currently pursuing BCA in Artificial Intelligence
+and Data Science with a strong interest in software
+engineering, programming and data analytics.
+
+</p>
+
+
+<div class="education-score">
+
+CGPA : <strong>9.85</strong>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="glass timeline-card">
+
+
+<i class="fa-solid fa-school"></i>
+
+
+<h3>
+Higher Secondary Education
+</h3>
+
+
+<h4>
+Biology Science Stream
+</h4>
+
+
+<p>
+
+Completed Plus Two in Biology Science stream and
+built a strong academic foundation before starting
+my journey in computer applications.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ACHIEVEMENTS SECTION -->
+
+
+<section id="achievements">
+
+
+<div class="container">
+
+
+<h2>Achievements</h2>
+
+
+
+<div class="skills-grid">
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-trophy"></i>
+
+
+<h3>
+CGPA 9.85
+</h3>
+
+
+<p>
+
+Maintaining excellent academic performance
+in BCA.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-laptop-code"></i>
+
+
+<h3>
+Freelance Data Science
+</h3>
+
+
+<p>
+
+Working on freelance data science projects
+while pursuing studies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-certificate"></i>
+
+
+<h3>
+AI Certification
+</h3>
+
+
+<p>
+
+Completed learning in Artificial Intelligence
+concepts.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-diagram-project"></i>
+
+
+<h3>
+Data Structures
+</h3>
+
+
+<p>
+
+Developing strong problem solving skills
+through data structures.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- SERVICES SECTION -->
+
+
+<section id="services">
+
+
+<div class="container">
+
+
+<h2>Services</h2>
+
+
+
+<div class="skills-grid">
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-code"></i>
+
+
+<h3>
+Web Development
+</h3>
+
+
+<p>
+
+Creating responsive and modern websites.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fab fa-python"></i>
+
+
+<h3>
+Python Development
+</h3>
+
+
+<p>
+
+Building Python programs and data solutions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-chart-column"></i>
+
+
+<h3>
+Data Analysis
+</h3>
+
+
+<p>
+
+Analyzing data and finding meaningful insights.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-brain"></i>
+
+
+<h3>
+Artificial Intelligence
+</h3>
+
+
+<p>
+
+Exploring AI technologies and intelligent systems.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-gear"></i>
+
+
+<h3>
+Automation
+</h3>
+
+
+<p>
+
+Creating solutions to improve productivity.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h3>
+Cybersecurity Basics
+</h3>
+
+
+<p>
+
+Learning security concepts and safe programming.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =========================
+PART 5 : PROJECTS + FILTERING
+========================= -->
+
+
+<section id="projects">
+
+
+<div class="container">
+
+
+<h2>My Projects</h2>
+
+
+<p class="section-subtitle">
+
+A collection of academic and personal projects
+built while learning software development and data science.
+
+</p>
+
+
+
+
+<!-- Project Filters -->
+
+
+<div class="project-filter">
+
+
+<button class="filter-btn active" data-filter="all">
+
+All
+
+</button>
+
+
+<button class="filter-btn" data-filter="web">
+
+Web Development
+
+</button>
+
+
+<button class="filter-btn" data-filter="python">
+
+Python
+
+</button>
+
+
+<button class="filter-btn" data-filter="data">
+
+Data Science
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- Project Cards -->
+
+
+<div class="projects-grid">
+
+
+
+
+
+<!-- Project 1 -->
+
+
+<div class="glass project-card web">
+
+
+<img src="hospital.jpg"
+alt="Hospital Management System Project"
+loading="lazy">
+
+
+<div class="project-content">
+
+
+<h3>
+Hospital Management System
+</h3>
+
+
+<p>
+
+A management system designed to organize
+hospital information, patient details,
+doctor records, appointments and reports.
+
+</p>
+
+
+
+<div class="tech-stack">
+
+<span>Python</span>
+
+<span>Database</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+</div>
+
+
+
+<div class="project-links">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank"
+class="btn primary">
+
+GitHub
+
+</a>
+
+
+
+<a href="#"
+class="btn secondary">
+
+Demo
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Project 2 -->
+
+
+<div class="glass project-card web">
+
+
+<img src="portfolio.jpg"
+alt="Portfolio Website"
+loading="lazy">
+
+
+<div class="project-content">
+
+
+<h3>
+Personal Portfolio Website
+</h3>
+
+
+<p>
+
+A responsive professional portfolio website
+showcasing skills, education, projects and
+career journey.
+
+</p>
+
+
+
+
+<div class="tech-stack">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+</div>
+
+
+
+
+<div class="project-links">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank"
+class="btn primary">
+
+GitHub
+
+</a>
+
+
+<a href="#"
+class="btn secondary">
+
+Demo
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Project 3 -->
+
+
+<div class="glass project-card python">
+
+
+<img src="python-project.jpg"
+alt="Python Project"
+loading="lazy">
+
+
+<div class="project-content">
+
+
+<h3>
+Python Data Analysis Project
+</h3>
+
+
+<p>
+
+Used Python concepts for data processing,
+analysis and solving programming problems.
+
+</p>
+
+
+
+<div class="tech-stack">
+
+<span>Python</span>
+
+<span>Pandas</span>
+
+<span>Data Analysis</span>
+
+</div>
+
+
+
+
+<div class="project-links">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank"
+class="btn primary">
+
+GitHub
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Project 4 -->
+
+
+<div class="glass project-card data">
+
+
+<img src="data-science.jpg"
+alt="Data Science Project"
+loading="lazy">
+
+
+<div class="project-content">
+
+
+<h3>
+Data Science Project
+</h3>
+
+
+<p>
+
+Worked on data science concepts including
+data cleaning, analysis and extracting insights.
+
+</p>
+
+
+
+<div class="tech-stack">
+
+<span>Python</span>
+
+<span>Analytics</span>
+
+<span>Visualization</span>
+
+</div>
+
+
+
+
+<div class="project-links">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank"
+class="btn primary">
+
+GitHub
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =========================
+PART 6 : GITHUB INTEGRATION
+========================= -->
+
+
+<section id="github">
+
+
+<div class="container">
+
+
+<h2>GitHub</h2>
+
+
+<p class="section-subtitle">
+
+Live GitHub profile information and latest repositories.
+
+</p>
+
+
+
+
+<div class="glass github-card">
+
+
+
+<div class="github-profile">
+
+
+<img id="github-avatar"
+src="https://github.com/shimnaep590-dot.png"
+alt="GitHub Profile Image"
+loading="lazy">
+
+
+
+<div>
+
+
+<h3 id="github-name">
+
+Fathimath Shimna E P
+
+</h3>
+
+
+
+<p id="github-bio">
+
+Software Engineer | BCA AI & Data Science Student
+
+</p>
+
+
+
+<a id="github-profile-link"
+href="https://github.com/shimnaep590-dot"
+target="_blank"
+class="btn primary">
+
+View GitHub
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- GitHub Statistics -->
+
+
+<div class="github-stats">
+
+
+<div class="glass stat-box">
+
+<i class="fa-solid fa-book"></i>
+
+<h3 id="repo-count">
+
+0
+
+</h3>
+
+<p>
+
+Repositories
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="glass stat-box">
+
+<i class="fa-solid fa-users"></i>
+
+
+<h3 id="followers">
+
+0
+
+</h3>
+
+
+<p>
+
+Followers
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass stat-box">
+
+<i class="fa-solid fa-user-group"></i>
+
+
+<h3 id="following">
+
+0
+
+</h3>
+
+
+<p>
+
+Following
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="glass stat-box">
+
+<i class="fa-solid fa-star"></i>
+
+
+<h3 id="stars">
+
+0
+
+</h3>
+
+
+<p>
+
+Stars
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<h3 class="repo-title">
+
+Latest Repositories
+
+</h3>
+
+
+
+
+<div id="repositories"
+class="projects-grid">
+
+<!-- Repositories will load here -->
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<script>
+
+
+// ============================
+// GitHub API
+// ============================
+
+
+const githubUser = "shimnaep590-dot";
+
+
+
+// Fetch Profile
+
+
+fetch(`https://api.github.com/users/${githubUser}`)
+
+.then(response => response.json())
+
+.then(data => {
+
+
+document.getElementById("github-avatar").src =
+data.avatar_url;
+
+
+document.getElementById("github-name").innerText =
+data.name || data.login;
+
+
+document.getElementById("github-bio").innerText =
+data.bio || "Software Engineer";
+
+
+document.getElementById("repo-count").innerText =
+data.public_repos;
+
+
+document.getElementById("followers").innerText =
+data.followers;
+
+
+document.getElementById("following").innerText =
+data.following;
+
+
+
+});
+
+
+
+
+
+
+// Fetch Repositories
+
+
+fetch(`https://api.github.com/users/${githubUser}/repos?sort=updated`)
+
+.then(response=>response.json())
+
+.then(repos=>{
+
+
+const container =
+document.getElementById("repositories");
+
+
+
+repos.slice(0,6).forEach(repo=>{
+
+
+container.innerHTML += `
+
+
+<div class="glass project-card">
+
+
+<div class="project-content">
+
+
+<h3>
+
+${repo.name}
+
+</h3>
+
+
+
+<p>
+
+${repo.description || "GitHub Project"}
+
+</p>
+
+
+
+<div class="tech-stack">
+
+<span>
+
+${repo.language || "Code"}
+
+</span>
+
+</div>
+
+
+
+<a href="${repo.html_url}"
+target="_blank"
+class="btn primary">
+
+Open Repository
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+});
+
+
+});
+
+
+
+</script>
+<!-- =========================
+PART 7 : CERTIFICATIONS + BLOG + TESTIMONIALS
+========================= -->
+
+
+<!-- CERTIFICATIONS SECTION -->
+
+<section id="certifications">
+
+
+<div class="container">
+
+
+<h2>Certifications</h2>
+
+
+
+<div class="skills-grid">
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-certificate"></i>
+
+
+<h3>
+Artificial Intelligence
+</h3>
+
+
+<p>
+
+Certification and learning in Artificial
+Intelligence concepts and applications.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-diagram-project"></i>
+
+
+<h3>
+Data Structures
+</h3>
+
+
+<p>
+
+Learning advanced problem solving techniques
+using data structures.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="glass skill-card">
+
+
+<i class="fa-solid fa-database"></i>
+
+
+<h3>
+Data Science
+</h3>
+
+
+<p>
+
+Developing knowledge in data analysis,
+Python and data processing.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- BLOG SECTION -->
+
+<section id="blog">
+
+
+<div class="container">
+
+
+<h2>Blog</h2>
+
+
+
+<div class="projects-grid">
+
+
+
+<div class="glass project-card">
+
+
+<div class="project-content">
+
+
+<i class="fa-solid fa-code fa-2x"></i>
+
+
+<h3>
+
+My Programming Journey
+
+</h3>
+
+
+<p>
+
+Sharing my experience learning programming,
+software development and technology.
+
+</p>
+
+
+<a href="#"
+class="btn secondary">
+
+Read More
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="glass project-card">
+
+
+<div class="project-content">
+
+
+<i class="fa-solid fa-brain fa-2x"></i>
+
+
+<h3>
+
+Artificial Intelligence Learning
+
+</h3>
+
+
+<p>
+
+Exploring AI, Machine Learning and
+future technologies.
+
+</p>
+
+
+<a href="#"
+class="btn secondary">
+
+Read More
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="glass project-card">
+
+
+<div class="project-content">
+
+
+<i class="fa-solid fa-chart-line fa-2x"></i>
+
+
+<h3>
+
+Data Science Notes
+
+</h3>
+
+
+<p>
+
+Learning data analysis techniques and
+sharing useful insights.
+
+</p>
+
+
+<a href="#"
+class="btn secondary">
+
+Read More
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- TESTIMONIAL SECTION -->
+
+
+<section id="testimonials">
+
+
+<div class="container">
+
+
+<h2>Testimonials</h2>
+
+
+
+<div class="glass testimonial-slider">
+
+
+
+<div class="testimonial active">
+
+
+<i class="fa-solid fa-quote-left"></i>
+
+
+<p>
+
+"A passionate learner with strong interest
+in technology, programming and innovation."
+
+</p>
+
+
+
+<h3>
+
+Academic Feedback
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+<div class="testimonial">
+
+
+<i class="fa-solid fa-quote-left"></i>
+
+
+<p>
+
+"Dedicated towards learning new skills and
+solving technical problems."
+
+</p>
+
+
+
+<h3>
+
+Project Collaboration
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+<div class="testimonial">
+
+
+<i class="fa-solid fa-quote-left"></i>
+
+
+<p>
+
+"Consistent improvement and commitment
+towards becoming a software professional."
+
+</p>
+
+
+
+<h3>
+
+Learning Journey
+
+</h3>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<style>
+
+
+/* =========================
+PART 7 STYLES
+========================= */
+
+
+.testimonial-slider{
+
+padding:50px;
+
+text-align:center;
+
+overflow:hidden;
+
+}
+
+
+.testimonial{
+
+display:none;
+
+animation:fade 1s ease;
+
+}
+
+
+.testimonial.active{
+
+display:block;
+
+}
+
+
+
+.testimonial i{
+
+font-size:40px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+
+// Testimonial Slider
+
+
+let testimonials =
+document.querySelectorAll(".testimonial");
+
+
+let testimonialIndex=0;
+
+
+
+setInterval(()=>{
+
+
+testimonials[testimonialIndex]
+.classList.remove("active");
+
+
+
+testimonialIndex =
+(testimonialIndex+1)%testimonials.length;
+
+
+
+testimonials[testimonialIndex]
+.classList.add("active");
+
+
+
+},4000);
+
+
+
+</script>
+<!-- =========================
+PART 8 : CONTACT + FOOTER
+========================= -->
+
+
+<section id="contact">
+
+
+<div class="container">
+
+
+<h2>Contact Me</h2>
+
+
+<p class="section-subtitle">
+
+Let's connect for opportunities, projects and collaborations.
+
+</p>
+
+
+
+
+
+<div class="contact-wrapper">
+
+
+
+<!-- Contact Information -->
+
+
+<div class="glass contact-info">
+
+
+<h3>
+
+Get In Touch
+
+</h3>
+
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+<a href="mailto:shimnaep590@gmail.com">
+
+shimnaep590@gmail.com
+
+</a>
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
+
+<a href="tel:+917306300384">
+
++91 7306300384
+
+</a>
+
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+
+Malappuram, Perinthalmanna, India
+
+
+</p>
+
+
+
+
+
+<div class="social-icons">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank"
+aria-label="GitHub">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+
+
+<a href="https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6/"
+target="_blank"
+aria-label="LinkedIn">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+
+
+
+<a href="https://www.instagram.com/_fathmth.shimna_"
+target="_blank"
+aria-label="Instagram">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+
+
+<a href="https://wa.me/917306300384"
+target="_blank"
+aria-label="WhatsApp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Contact Form -->
+
+
+<div class="glass contact-form">
+
+
+<form id="contactForm">
+
+
+<input 
+type="text"
+placeholder="Your Name"
+required>
+
+
+
+<input 
+type="email"
+placeholder="Your Email"
+required>
+
+
+
+
+<input 
+type="text"
+placeholder="Subject"
+required>
+
+
+
+
+<textarea
+rows="6"
+placeholder="Your Message"
+required></textarea>
+
+
+
+
+<button 
+type="submit"
+class="btn primary">
+
+Send Message
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<div class="container">
+
+
+<h2>
+
+Fathimath Shimna E P
+
+</h2>
+
+
+
+<p>
+
+Software Engineer | BCA AI & Data Science Student |
+Data Science Professional
+
+</p>
+
+
+
+
+
+<div class="footer-links">
+
+
+<a href="#home">
+
+Home
+
+</a>
+
+
+<a href="#about">
+
+About
+
+</a>
+
+
+<a href="#skills">
+
+Skills
+
+</a>
+
+
+
+<a href="#projects">
+
+Projects
+
+</a>
+
+
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="social-icons">
+
+
+<a href="https://github.com/shimnaep590-dot"
+target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+
+
+<a href="https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6/"
+target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+
+
+<a href="https://www.instagram.com/_fathmth.shimna_"
+target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<p class="copyright">
+
+© <span id="year"></span>
+Fathimath Shimna E P. All Rights Reserved.
+
+</p>
+
+
+
+
+
+<a href="#home"
+class="back-to-top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+<style>
+
+
+/* =========================
+PART 8 STYLES
+========================= */
+
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+
+}
+
+
+
+.contact-info,
+.contact-form{
+
+padding:40px;
+
+}
+
+
+
+
+.contact-info p{
+
+margin:20px 0;
+
+}
+
+
+
+.contact-info i{
+
+color:var(--primary);
+
+margin-right:10px;
+
+}
+
+
+
+
+.social-icons{
+
+display:flex;
+
+gap:20px;
+
+margin-top:25px;
+
+}
+
+
+
+.social-icons a{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(255,255,255,.1);
+
+transition:.3s;
+
+}
+
+
+
+.social-icons a:hover{
+
+background:var(--primary);
+
+color:#000;
+
+transform:translateY(-5px);
+
+}
+
+
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:20px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:15px;
+
+color:white;
+
+outline:none;
+
+}
+
+
+
+
+footer{
+
+padding:60px 8%;
+
+text-align:center;
+
+background:#020202;
+
+}
+
+
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin:30px 0;
+
+}
+
+
+
+.back-to-top{
+
+display:flex;
+
+margin:30px auto 0;
+
+width:45px;
+
+height:45px;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:black;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+</style>
+<!-- =========================
+PART 9 : JAVASCRIPT ANIMATIONS & INTERACTIONS
+========================= -->
+
+
+<script>
+
+
+// =========================
+// LOADING SCREEN
+// =========================
+
+
+window.addEventListener("load",()=>{
+
+
+const loader=document.getElementById("loader");
+
+
+if(loader){
+
+setTimeout(()=>{
+
+loader.style.opacity="0";
+
+loader.style.visibility="hidden";
+
+
+},1200);
+
+
+}
+
+
+});
+
+
+
+
+
+
+// =========================
+// MOBILE MENU
+// =========================
+
+
+const menuBtn=document.querySelector(".menu-btn");
+
+const navLinks=document.querySelector(".nav-links");
+
+
+
+if(menuBtn){
+
+
+menuBtn.addEventListener("click",()=>{
+
+
+navLinks.classList.toggle("active");
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+// =========================
+// SCROLL PROGRESS
+// =========================
+
+
+const progress=document.getElementById("scroll-progress");
+
+
+
+window.addEventListener("scroll",()=>{
+
+
+let scrollTop=document.documentElement.scrollTop;
+
+
+let height=document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+
+
+let percentage=(scrollTop/height)*100;
+
+
+
+if(progress){
+
+progress.style.width=percentage+"%";
+
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+// =========================
+// TYPE WRITER EFFECT
+// =========================
+
+
+const typing=document.getElementById("typing");
+
+
+
+const roles=[
+
+"Software Engineer",
+
+"Data Analyst",
+
+"AI Enthusiast",
+
+"Data Science Professional",
+
+"Full Stack Developer",
+
+"Researcher"
+
+];
+
+
+
+let roleIndex=0;
+
+let charIndex=0;
+
+let deleting=false;
+
+
+
+function typeWriter(){
+
+
+if(!typing) return;
+
+
+
+let current=roles[roleIndex];
+
+
+
+if(!deleting){
+
+
+typing.textContent=current.substring(0,charIndex++);
+
+
+
+if(charIndex>current.length){
+
+
+deleting=true;
+
+setTimeout(typeWriter,1000);
+
+return;
+
+
+}
+
+
+
+}
+
+else{
+
+
+typing.textContent=current.substring(0,charIndex--);
+
+
+
+if(charIndex===0){
+
+
+deleting=false;
+
+
+roleIndex=(roleIndex+1)%roles.length;
+
+
+}
+
+
+}
+
+
+
+setTimeout(typeWriter,deleting?60:120);
+
+
+
+}
+
+
+
+typeWriter();
+
+
+
+
+
+
+
+
+
+// =========================
+// PROJECT FILTER
+// =========================
+
+
+
+const buttons=document.querySelectorAll(".filter-btn");
+
+const projects=document.querySelectorAll(".project-card");
+
+
+
+buttons.forEach(button=>{
+
+
+button.addEventListener("click",()=>{
+
+
+buttons.forEach(btn=>
+
+btn.classList.remove("active")
+
+);
+
+
+
+button.classList.add("active");
+
+
+
+let filter=button.dataset.filter;
+
+
+
+projects.forEach(project=>{
+
+
+if(filter==="all" ||
+project.classList.contains(filter)){
+
+
+project.style.display="block";
+
+
+}
+
+else{
+
+
+project.style.display="none";
+
+
+}
+
+
+});
+
+
+
+});
+
+
+});
+
+
+
+
+
+
+
+
+
+// =========================
+// SCROLL REVEAL
+// =========================
+
+
+
+const revealElements=document.querySelectorAll(
+
+".glass"
+
+);
+
+
+
+const revealObserver=new IntersectionObserver((entries)=>{
+
+
+entries.forEach(entry=>{
+
+
+if(entry.isIntersecting){
+
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+
+}
+
+
+});
+
+
+},{threshold:.15});
+
+
+
+revealElements.forEach(element=>{
+
+
+element.style.opacity="0";
+
+element.style.transform="translateY(40px)";
+
+element.style.transition=".8s ease";
+
+
+
+revealObserver.observe(element);
+
+
+});
+
+
+
+
+
+
+
+
+// =========================
+// GSAP ANIMATIONS
+// =========================
+
+
+
+if(window.gsap){
+
+
+gsap.from(".navbar",{
+
+y:-80,
+
+opacity:0,
+
+duration:1
+
+});
+
+
+
+gsap.from(".hero-content",{
+
+x:-80,
+
+opacity:0,
+
+duration:1
+
+});
+
+
+
+gsap.from(".profile-glow",{
+
+scale:.5,
+
+opacity:0,
+
+duration:1.2
+
+});
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// =========================
+// VANILLA TILT
+// =========================
+
+
+if(window.VanillaTilt){
+
+
+VanillaTilt.init(
+
+document.querySelectorAll(".project-card,.skill-card"),
+
+{
+
+max:12,
+
+speed:400,
+
+glare:true,
+
+"max-glare":0.3
+
+}
+
+
+);
+
+
+}
+
+
+
+
+
+
+
+
+// =========================
+// CONTACT FORM
+// =========================
+
+
+
+const form=document.getElementById("contactForm");
+
+
+
+if(form){
+
+
+form.addEventListener("submit",(event)=>{
+
+
+event.preventDefault();
+
+
+
+alert(
+
+"Thank you! Your message has been sent."
+
+);
+
+
+
+form.reset();
+
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+
+// =========================
+// CURRENT YEAR
+// =========================
+
+
+
+const year=document.getElementById("year");
+
+
+if(year){
+
+
+year.textContent=new Date().getFullYear();
+
+
+}
+
+
+
+
+
+
+
+
+
+// =========================
+// BACK TO TOP
+// =========================
+
+
+
+const topButton=document.querySelector(".back-to-top");
+
+
+
+window.addEventListener("scroll",()=>{
+
+
+if(topButton){
+
+
+topButton.style.display=
+
+window.scrollY>500
+
+?"flex"
+
+:"none";
+
+}
+
+
+});
+
+
+
+
+
+
+// =========================
+// REDUCED MOTION SUPPORT
+// =========================
+
+
+
+if(window.matchMedia(
+
+"(prefers-reduced-motion:reduce)"
+
+).matches){
+
+
+document.documentElement.style.scrollBehavior="auto";
+
+
+}
+
+
+
+
+console.log(
+
+"Fathimath Shimna E P Portfolio Loaded Successfully"
+
+);
+
+
+
+</script>
+<!-- =========================
+PART 10 : FINAL OPTIMIZATION + ACCESSIBILITY + CLOSING
+========================= -->
+
+
+<script>
+
+
+// =========================
+// ACTIVE NAVBAR SCROLL SPY
+// =========================
+
+
+const sections=document.querySelectorAll("section");
+
+const navItems=document.querySelectorAll(".nav-links a");
+
+
+
+window.addEventListener("scroll",()=>{
+
+
+let current="";
+
+
+sections.forEach(section=>{
+
+
+let top=window.scrollY;
+
+
+let offset=section.offsetTop-150;
+
+
+let height=section.offsetHeight;
+
+
+
+if(top>=offset && top<offset+height){
+
+current=section.getAttribute("id");
+
+}
+
+
+});
+
+
+
+navItems.forEach(link=>{
+
+
+link.classList.remove("active");
+
+
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active");
+
+}
+
+
+});
+
+
+});
+
+
+
+
+
+
+
+
+// =========================
+// CURSOR EFFECT
+// =========================
+
+
+const cursor=document.createElement("div");
+
+
+cursor.className="custom-cursor";
+
+
+document.body.appendChild(cursor);
+
+
+
+document.addEventListener("mousemove",(e)=>{
+
+
+cursor.style.left=e.clientX+"px";
+
+
+cursor.style.top=e.clientY+"px";
+
+
+});
+
+
+
+
+
+
+// =========================
+// LOCAL STORAGE THEME READY
+// =========================
+
+
+const savedTheme=
+
+localStorage.getItem("theme");
+
+
+
+if(savedTheme){
+
+document.body.dataset.theme=savedTheme;
+
+}
+
+
+
+
+
+// =========================
+// LAZY IMAGE OPTIMIZATION
+// =========================
+
+
+document.querySelectorAll("img").forEach(img=>{
+
+img.loading="lazy";
+
+});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<style>
+
+
+/* =========================
+FINAL POLISH CSS
+========================= */
+
+
+
+#scroll-progress{
+
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+background:var(--primary);
+
+z-index:9999;
+
+box-shadow:0 0 15px var(--primary);
+
+}
+
+
+
+
+#loader{
+
+
+position:fixed;
+
+inset:0;
+
+background:#050505;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:99999;
+
+transition:.5s;
+
+}
+
+
+
+.loader-box{
+
+text-align:center;
+
+}
+
+
+
+.loader-box h1{
+
+
+font-size:70px;
+
+color:var(--primary);
+
+text-shadow:0 0 30px var(--primary);
+
+
+}
+
+
+
+
+.loader-line{
+
+
+width:220px;
+
+height:5px;
+
+background:#222;
+
+overflow:hidden;
+
+border-radius:20px;
+
+margin:20px auto;
+
+
+}
+
+
+
+.loader-line span{
+
+
+display:block;
+
+height:100%;
+
+width:0;
+
+background:var(--primary);
+
+animation:loading 2s forwards;
+
+
+}
+
+
+
+@keyframes loading{
+
+
+to{
+
+width:100%;
+
+}
+
+
+}
+
+
+
+
+
+.profile-glow{
+
+
+width:300px;
+
+height:300px;
+
+border-radius:50%;
+
+padding:8px;
+
+background:linear-gradient(
+
+45deg,
+
+var(--primary),
+
+var(--secondary),
+
+var(--accent)
+
+);
+
+
+animation:rotateGlow 6s linear infinite;
+
+
+}
+
+
+
+.profile-glow img{
+
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+border-radius:50%;
+
+}
+
+
+
+@keyframes rotateGlow{
+
+
+100%{
+
+filter:hue-rotate(360deg);
+
+}
+
+
+}
+
+
+
+
+
+
+.hero{
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:60px;
+
+min-height:90vh;
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+.hero-content{
+
+
+max-width:600px;
+
+}
+
+
+
+
+.hero-content h1{
+
+
+font-size:55px;
+
+background:linear-gradient(
+
+90deg,
+
+var(--primary),
+
+var(--secondary)
+
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+
+}
+
+
+
+.floating{
+
+
+position:absolute;
+
+width:60px;
+
+height:60px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:var(--card);
+
+backdrop-filter:blur(10px);
+
+color:var(--primary);
+
+font-size:25px;
+
+animation:float 4s infinite;
+
+
+}
+
+
+
+.tech1{
+
+top:20%;
+
+left:10%;
+
+}
+
+
+.tech2{
+
+top:30%;
+
+right:10%;
+
+
+}
+
+
+.tech3{
+
+bottom:20%;
+
+left:15%;
+
+
+}
+
+
+.tech4{
+
+bottom:15%;
+
+right:20%;
+
+
+}
+
+
+
+@keyframes float{
+
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+
+}
+
+
+
+
+
+.custom-cursor{
+
+
+position:fixed;
+
+width:20px;
+
+height:20px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+pointer-events:none;
+
+z-index:99999;
+
+mix-blend-mode:screen;
+
+transform:translate(-50%,-50%);
+
+}
+
+
+
+.nav-links a.active{
+
+
+color:var(--primary);
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+
+
+.nav-links{
+
+
+position:absolute;
+
+top:80px;
+
+right:20px;
+
+display:none;
+
+flex-direction:column;
+
+background:#111;
+
+padding:25px;
+
+border-radius:20px;
+
+
+}
+
+
+
+.nav-links.active{
+
+
+display:flex;
+
+
+}
+
+
+
+.menu-btn{
+
+
+display:block;
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:25px;
+
+
+}
+
+
+
+}
+
+
+</style>
+
+
+
+
+
+
+<!-- =========================
+STRUCTURED DATA SEO
+========================= -->
+
+
+<script type="application/ld+json">
+
+{
+
+"@context":"https://schema.org",
+
+"@type":"Person",
+
+"name":"Fathimath Shimna E P",
+
+"jobTitle":"Software Engineer",
+
+"email":"shimnaep590@gmail.com",
+
+"telephone":"+917306300384",
+
+"url":"https://github.com/shimnaep590-dot",
+
+"sameAs":[
+
+"https://github.com/shimnaep590-dot",
+
+"https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6/"
+
+]
+
+}
+
+</script>
+
+
 
 </body>
+
 </html>
